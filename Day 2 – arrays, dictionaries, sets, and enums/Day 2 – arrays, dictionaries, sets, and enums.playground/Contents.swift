@@ -17,3 +17,7 @@ var name = (first: "Taylor", last: "Swift")
 name.0
 name.first
 name.last
+
+let address = (house: 555, street: "Taylor Swift Avenue", city: "Nashville")
+let set = Set(["aardvark", "astronaut", "azalea"])
+let pythons = ["Eric", "Graham", "John", "Michael", "Terry"]
