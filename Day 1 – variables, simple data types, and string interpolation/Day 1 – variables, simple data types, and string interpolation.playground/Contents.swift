@@ -26,3 +26,8 @@ var str = "Your score was \(score)"
 var results = "The test results are here: \(str)"
 
 let taylor = "swift"
+
+let album: String = "Reputation"
+let year: Int = 1989
+let height: Double = 1.78
+let taylorRocks: Bool = false
