@@ -34,3 +34,14 @@ let favoriteIceCream = [
 ]
 favoriteIceCream["Paul"]
 favoriteIceCream["Charlotte", default: "Unknown"]
+
+var teams = [String: String]()
+teams["Paul"] = "Red"
+print(teams)
+
+var results = [Int]()
+var words = Set<String>()
+var numbers = Set<Int>()
+
+var scores = Dictionary<String, Int>()
+var results2 = Array<Int>()
