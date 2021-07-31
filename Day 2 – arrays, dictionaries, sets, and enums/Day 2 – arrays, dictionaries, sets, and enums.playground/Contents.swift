@@ -64,3 +64,12 @@ enum Activity {
 }
 
 let talking = Activity.talking(topic: "football")
+
+enum Planet: Int {
+    case mercury = 1
+    case venus
+    case earth
+    case mars
+}
+
+let venus = Planet(rawValue: 2)
