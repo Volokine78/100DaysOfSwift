@@ -45,3 +45,14 @@ var numbers = Set<Int>()
 
 var scores = Dictionary<String, Int>()
 var results2 = Array<Int>()
+
+let conclusion = "failure"
+let conclusion2 = "failed"
+let conclusion3 = "fail"
+
+enum Conclusion {
+    case success
+    case failure
+}
+let conclusion4 = Conclusion.failure
+
