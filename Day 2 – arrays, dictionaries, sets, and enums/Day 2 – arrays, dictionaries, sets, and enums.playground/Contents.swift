@@ -12,3 +12,8 @@ beatles[1]
 
 let colors = Set(["red", "green", "blue"])
 let colors2 = Set(["red", "green", "blue", "red", "blue"])
+
+var name = (first: "Taylor", last: "Swift")
+name.0
+name.first
+name.last
