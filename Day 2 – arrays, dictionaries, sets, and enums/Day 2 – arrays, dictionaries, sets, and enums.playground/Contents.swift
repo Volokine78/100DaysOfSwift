@@ -27,3 +27,10 @@ let heights = [
     "Ed Sheeran": 1.73
 ]
 heights["Taylor Swift"]
+
+let favoriteIceCream = [
+    "Paul": "Chocolate",
+    "Sophie": "Vanilla"
+]
+favoriteIceCream["Paul"]
+favoriteIceCream["Charlotte", default: "Unknown"]
