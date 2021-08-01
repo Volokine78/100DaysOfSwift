@@ -24,3 +24,14 @@ score -= 5
 
 var quote = "The rain in Spain falls mainly on"
 quote += "Spaniards"
+
+let firstScore2 = 6
+let secondScore2 = 4
+
+firstScore2 == secondScore2
+firstScore2 != secondScore2
+
+firstScore2 < secondScore2
+firstScore2 >= secondScore2
+
+"Taylor" <= "Swift"
