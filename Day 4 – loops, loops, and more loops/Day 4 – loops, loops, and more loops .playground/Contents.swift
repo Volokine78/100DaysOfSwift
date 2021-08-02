@@ -73,3 +73,14 @@ for i in 1...10 {
     }
     print(i)
 }
+
+var counter = 0
+
+while true {
+    print(" ")
+    counter += 1
+    
+    if counter == 273 {
+        break
+    }
+}
