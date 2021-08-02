@@ -26,3 +26,16 @@ while number <= 20 {
 }
 
 print("Ready or not, here I come!")
+
+var num = 1
+
+repeat {
+    print(num)
+    number += 1
+} while number <= 20
+
+print("Ready or not, here I come!")
+
+repeat {
+    print("This is false")
+} while false
