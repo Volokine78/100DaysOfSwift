@@ -24,3 +24,9 @@ func square1(number: Int) -> Int {
 
 let result = square1(number: 8)
 print(result)
+
+func sayHello(to name: String) {
+    print("Hello, \(name)!")
+}
+
+sayHello(to: "Taylor")
