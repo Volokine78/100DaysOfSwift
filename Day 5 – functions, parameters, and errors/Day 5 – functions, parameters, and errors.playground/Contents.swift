@@ -30,3 +30,10 @@ func sayHello(to name: String) {
 }
 
 sayHello(to: "Taylor")
+
+func greet(_ person: String) {
+    print("Hello, \(person)!")
+}
+
+greet("Taylor")
+
