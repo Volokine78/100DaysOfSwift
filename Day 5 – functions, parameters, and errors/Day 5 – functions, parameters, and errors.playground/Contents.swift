@@ -71,8 +71,16 @@ func checkPassword(_ password: String) throws -> Bool {
 
 let password = "password"
 do {
-    _ = try checkPassword(password)
+    try checkPassword(password)
     print("good password")
 } catch PasswordError.obvious {
     print("Change your password.")
 }
+
+do {
+    try checkPassword("password")
+    print("That password is good!")
+} catch {
+    print("You can't use that password.")
+}
+
