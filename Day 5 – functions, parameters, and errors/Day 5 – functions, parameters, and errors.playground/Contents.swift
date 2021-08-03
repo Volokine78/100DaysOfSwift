@@ -11,3 +11,9 @@ MyApp will resize them all into thumbnails
 }
 
 printHelp()
+
+func square(number: Int) {
+    print("\n", number * number)
+}
+
+square(number: 8)
