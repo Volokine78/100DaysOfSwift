@@ -17,3 +17,10 @@ func square(number: Int) {
 }
 
 square(number: 8)
+
+func square1(number: Int) -> Int {
+    return number * number
+}
+
+let result = square1(number: 8)
+print(result)
