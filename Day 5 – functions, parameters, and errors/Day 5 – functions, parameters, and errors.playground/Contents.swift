@@ -57,3 +57,22 @@ func square2(numbers: Int...) {
 }
 
 square2(numbers: 1, 2, 3, 4, 5)
+
+enum PasswordError: Error {
+    case obvious
+}
+
+func checkPassword(_ password: String) throws -> Bool {
+    if password == "password" {
+        throw PasswordError.obvious
+    }
+    return true
+}
+
+let password = "password"
+do {
+    _ = try checkPassword(password)
+    print("good password")
+} catch PasswordError.obvious {
+    print("Change your password.")
+}
