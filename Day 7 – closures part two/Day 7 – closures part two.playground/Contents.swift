@@ -58,3 +58,11 @@ travelTo {
     "I'm going to \($0) at \($1) miles per hour."
 }
 
+func travelWithClosure() -> (String) -> Void {
+    return {
+        print("I'm going to \($0)")
+    }
+}
+
+let destination = travelWithClosure()
+destination("London")
