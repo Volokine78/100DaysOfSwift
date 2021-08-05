@@ -47,4 +47,14 @@ let multiplied = reduce(numbers) {
     $0 * $1
 }
 
+func travelTo(action: (String, Int) -> String) {
+    print("I'm getting ready to go")
+    let description = action("London", 60)
+    print(description)
+    print("I arrived")
+}
+
+travelTo {
+    "I'm going to \($0) at \($1) miles per hour."
+}
 
