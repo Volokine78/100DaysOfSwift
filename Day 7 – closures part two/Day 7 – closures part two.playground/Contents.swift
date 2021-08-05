@@ -20,3 +20,27 @@ func travel2(action: (String) -> String) {
 travel2 { (place: String) -> String in
     return "I'm going to \(place) in my car"
 }
+
+func reduce(_ values: [Int], using closure: (Int, Int) -> Int) -> Int {
+    var current = values[0]
+    for value in values[1...] {
+        current = closure(current, value)
+    }
+    return current
+}
+
+let numbers = [10, 20, 30]
+
+let sum = reduce(numbers) { (runningTotal: Int, next: Int) in
+    runningTotal + next
+}
+
+let sum2 = reduce(numbers, using: +)
+
+print(sum)
+
+let multiplied = reduce(numbers) {
+    $0 * $1
+}
+
+
