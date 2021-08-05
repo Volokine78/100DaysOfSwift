@@ -18,3 +18,11 @@ let drivingWithReturn = { (place: String) -> String in
 
 let message = drivingWithReturn("London")
 print(message)
+
+func travel(action: () -> Void) {
+    print("I'm getting ready to go.")
+    action()
+    print("I arrived!")
+}
+
+travel(action: driving)
