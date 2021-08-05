@@ -1,3 +1,7 @@
 import UIKit
 
-var greeting = "Hello, playground"
+let driving = {
+    print("I'm driving in my car")
+}
+
+driving()
