@@ -19,10 +19,15 @@ let drivingWithReturn = { (place: String) -> String in
 let message = drivingWithReturn("London")
 print(message)
 
-func travel(action: () -> Void) {
+func travel( number:Int, action: () -> Void) {
     print("I'm getting ready to go.")
     action()
     print("I arrived!")
+    print(number)
 }
 
-travel(action: driving)
+travel(number: 5, action: driving)
+
+travel(number: 5) {
+    print("I'm driving im my car")
+}
