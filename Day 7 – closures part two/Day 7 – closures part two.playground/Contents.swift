@@ -21,6 +21,10 @@ travel2 { (place: String) -> String in
     return "I'm going to \(place) in my car"
 }
 
+travel2 {
+    "I'm going to \($0) in my car"
+}
+
 func reduce(_ values: [Int], using closure: (Int, Int) -> Int) -> Int {
     var current = values[0]
     for value in values[1...] {
