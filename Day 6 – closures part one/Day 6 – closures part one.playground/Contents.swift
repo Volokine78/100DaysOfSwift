@@ -11,3 +11,10 @@ let driving2 = { (place: String) in
 }
 
 driving2("London")
+
+let drivingWithReturn = { (place: String) -> String in
+    return "I'm going to \(place) in my car"
+}
+
+let message = drivingWithReturn("London")
+print(message)
