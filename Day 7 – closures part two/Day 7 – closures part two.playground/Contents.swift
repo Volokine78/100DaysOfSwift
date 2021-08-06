@@ -59,10 +59,37 @@ travelTo {
 }
 
 func travelWithClosure() -> (String) -> Void {
+    var counter = 1
+    
     return {
-        print("I'm going to \($0)")
+        print("\(counter). I'm going to \($0)")
+        counter += 1
     }
 }
 
 let destination = travelWithClosure()
 destination("London")
+destination("London")
+destination("London")
+destination("London")
+
+func makeRandomNumberGenerator() -> () -> Int {
+    var previousNumber = 0
+    
+    return {
+        var newNumber: Int
+        
+        repeat {
+            newNumber = Int.random(in: 1...3)
+        } while newNumber == previousNumber
+        
+        previousNumber = newNumber
+        return newNumber
+    }
+}
+
+let generator = makeRandomNumberGenerator()
+
+for _ in 1...10 {
+    print(generator())
+}
