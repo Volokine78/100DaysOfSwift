@@ -69,3 +69,10 @@ print(string.hasPrefix("Do"))
 print(string.uppercased())
 print(string.sorted())
 
+var toys = ["Woody"]
+
+print(toys.count)
+toys.append("Buzz")
+toys.firstIndex(of: "Buzz")
+print(toys.sorted())
+toys.remove(at: 0)
