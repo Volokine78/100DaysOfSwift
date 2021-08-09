@@ -101,3 +101,42 @@ let ted = Student2(name: "Ted")
 let taylor = Student2(name: "Taylor")
 let john = Student2(name: "John")
 print(Student2.classSize)
+
+struct Person3 {
+    private var id: String
+    
+    init(id: String) {
+        self.id = id
+    }
+    
+    func identify() -> String {
+        return "My social security number is \(id)"
+    }
+}
+
+let mike = Person3(id: "12345")
+print(mike.identify())
+
+struct FacebookUser {
+    private var privatePosts: [String] = ["private"]
+    public var publicPosts: [String]
+    
+    init(publicPosts: [String]) {
+        self.publicPosts = publicPosts
+    }
+}
+let user56 = FacebookUser(publicPosts: ["post"])
+user56.publicPosts
+
+struct Doctor {
+    var name: String
+    var location: String
+    private var currentPatient = "No one"
+    
+    init(name: String, location: String, currentPatient: String) {
+        self.name = name
+        self.location = location
+        self.currentPatient = currentPatient
+    }
+}
+let drJones = Doctor(name: "Esther Jones", location: "Bristol", currentPatient: "James")
