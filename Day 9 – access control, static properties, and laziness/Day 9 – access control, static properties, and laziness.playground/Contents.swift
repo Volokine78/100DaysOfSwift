@@ -86,3 +86,18 @@ struct Person2 {
 
 var ed = Person2(name: "Ed")
 ed.familyTree
+
+struct Student2 {
+    static var classSize = 0
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+        Student2.classSize += 1
+    }
+}
+
+let ted = Student2(name: "Ted")
+let taylor = Student2(name: "Taylor")
+let john = Student2(name: "John")
+print(Student2.classSize)
