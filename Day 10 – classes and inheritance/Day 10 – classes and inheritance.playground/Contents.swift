@@ -11,3 +11,9 @@ class Dog {
 }
 
 let poopy = Dog(name: "Poppy", breed: "Poodle")
+
+class Poodle: Dog {
+    init(name: String) {
+        super.init(name: name, breed: "Poodle")
+    }
+}
