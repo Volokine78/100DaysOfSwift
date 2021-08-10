@@ -116,4 +116,20 @@ let numbers3 = ["four": 4, "eight": 8, "fifteen": 15, "sixteen": 16]
 let allEven3 = numbers3.allSatisfy { $0.value.isMultiple(of: 2) }
 print(allEven, allEven2, allEven3)
 
+protocol Identifiable2 {
+    var id: String { get set }
+    func identify()
+}
 
+extension Identifiable2 {
+    func identify() {
+        print("My ID is \(id)")
+    }
+}
+
+struct User2: Identifiable2 {
+    var id: String
+}
+
+let twostraws = User2(id: "twostraws")
+twostraws.identify()
