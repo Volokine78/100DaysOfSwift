@@ -17,3 +17,18 @@ class Poodle: Dog {
         super.init(name: name, breed: "Poodle")
     }
 }
+
+class Dog2 {
+    func makeNoise() {
+        print("Woof!")
+    }
+}
+
+class Poodle2: Dog2 {
+    override func makeNoise() {
+        print("Yip!")
+    }
+}
+
+let poopy2 = Poodle2()
+poopy2.makeNoise()
