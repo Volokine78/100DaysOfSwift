@@ -66,3 +66,5 @@ enum Direction: CaseIterable {
 }
 
 let randomDirection = Direction.allCases.randomElement()!
+
+let age2: Int! = nil
