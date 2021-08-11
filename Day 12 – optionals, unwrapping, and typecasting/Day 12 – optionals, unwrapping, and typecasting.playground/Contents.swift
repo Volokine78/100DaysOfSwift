@@ -51,3 +51,18 @@ func printMeaningOfLife2() {
 
 printMeaningOfLife()
 printMeaningOfLife2()
+
+let str = "5"
+let num = Int(str)!
+
+let randomnumber = (1...10).randomElement()!
+
+enum Direction: CaseIterable {
+    case north, south, east, west
+    
+    static func random() -> Direction {
+        Direction.allCases.randomElement()!
+    }
+}
+
+let randomDirection = Direction.allCases.randomElement()!
