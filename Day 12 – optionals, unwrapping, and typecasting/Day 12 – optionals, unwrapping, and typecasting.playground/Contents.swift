@@ -117,3 +117,33 @@ if let result = try? checkPassword("password") {
 
 try! checkPassword("sekrit")
 
+struct Person {
+    var id: String
+    
+    init?(id: String) {
+        if id.count == 9 {
+            self.id = id
+        } else {
+            return nil
+        }
+    }
+}
+
+let person = Person(id: "Johnattan")
+let person2 = Person(id: "John")
+
+struct Employee {
+    var username: String
+    var password: String
+
+    init?(username: String, password: String) {
+        guard password.count >= 8 else { return nil }
+        guard password.lowercased() != "password" else { return nil }
+
+        self.username = username
+        self.password = password
+    }
+}
+
+let tim = Employee(username: "TimC", password: "app1e")
+let craig = Employee(username: "CraigF", password: "ha1rf0rce0ne")
