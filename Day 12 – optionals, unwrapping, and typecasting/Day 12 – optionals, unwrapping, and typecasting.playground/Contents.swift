@@ -84,3 +84,9 @@ let scores = ["Picard": 800, "Data": 7000, "Troi": 900]
 let crusherScore = scores["Chrusher"] ?? 0
 let crusherScore2 = scores["Chrusher", default: 0]
 
+let names = ["John", "Paul", "George", "Ringo"]
+let beatle = names.first?.uppercased()
+
+let names2 = ["Vincent": "van Gogh", "Pablo": "Picasso", "Claude": "Monet"]
+let surnameLetter = names2["Vincent"]?.first?.uppercased() ?? "?"
+
