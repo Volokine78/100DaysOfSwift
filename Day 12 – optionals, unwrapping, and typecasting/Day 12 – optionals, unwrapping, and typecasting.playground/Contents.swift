@@ -68,3 +68,19 @@ enum Direction: CaseIterable {
 let randomDirection = Direction.allCases.randomElement()!
 
 let age2: Int! = nil
+
+func username(for id: Int) -> String? {
+    if id == 1 {
+        return "Taylor Swift"
+    } else {
+        return nil
+    }
+}
+
+let user = username(for: 15) ?? "Anonymous"
+print(user)
+
+let scores = ["Picard": 800, "Data": 7000, "Troi": 900]
+let crusherScore = scores["Chrusher"] ?? 0
+let crusherScore2 = scores["Chrusher", default: 0]
+
