@@ -147,3 +147,45 @@ struct Employee {
 
 let tim = Employee(username: "TimC", password: "app1e")
 let craig = Employee(username: "CraigF", password: "ha1rf0rce0ne")
+
+class Animal { }
+class Fish: Animal { }
+
+class Dog: Animal {
+    func makeNoise() {
+        print("Woof!")
+    }
+}
+
+let pets = [Fish(), Dog(), Fish(), Dog()]
+
+for pet in pets {
+    if let dog = pet as? Dog {
+        dog.makeNoise()
+    }
+}
+
+class Person2 {
+    var name = "Anonymous"
+}
+
+class Customer2: Person2 {
+    var id = 12345
+}
+
+class Employee2: Person2 {
+    var salary = 50_000
+}
+
+let customer = Customer2()
+let employee = Employee2()
+let people = [customer, employee]
+
+for person in people {
+    if let customer = person as? Customer2 {
+        print("I'm a customer, with id \(customer.id)")
+    } else if let employee = person as? Employee2 {
+        print("I'm an employee, earning $\(employee.salary)")
+    }
+}
+
