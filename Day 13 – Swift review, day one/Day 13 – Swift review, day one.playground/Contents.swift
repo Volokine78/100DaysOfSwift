@@ -93,3 +93,25 @@ var person = [
 
 person["middle"]
 person["month"]
+
+var action: String
+var person2 = "hater"
+
+if person2 == "hater" {
+    action = "hate"
+} else if person2 == "player" {
+    action = "play"
+} else {
+    action = "cruise"
+}
+
+var stayOutTooLate3 = true
+var nothingInBrai3 = true
+
+if stayOutTooLate3 && nothingInBrai3 {
+    action = "cruise"
+}
+
+if !stayOutTooLate3 && !nothingInBrai3 {
+    action = "cruise"
+}
