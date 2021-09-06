@@ -56,3 +56,12 @@ stayOutTooLate2
 !stayOutTooLate2
 
 name3 != "Tim McGraw"
+
+"Your name is \(name3)"
+"Your name is " + name3
+
+var age2 = 25
+var latitude2 = 36.166667
+
+"Your name is \(name3), your age is \(age2), and your latitude is \(latitude2)"
+"You are \(age2) years old. In another \(age2) years you will be \(age * 2)."
