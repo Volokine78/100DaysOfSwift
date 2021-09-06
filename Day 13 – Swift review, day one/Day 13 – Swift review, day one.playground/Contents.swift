@@ -65,3 +65,20 @@ var latitude2 = 36.166667
 
 "Your name is \(name3), your age is \(age2), and your latitude is \(latitude2)"
 "You are \(age2) years old. In another \(age2) years you will be \(age * 2)."
+
+var evenNumbers = [2, 4, 6, 8]
+var songs: [Any] = ["Shake it off", "You belong with me", "Back to december", 3]
+songs[0]
+songs[1]
+songs[2]
+
+type(of: songs)
+
+var songs2: [String] = []
+var songs3 = [String]()
+songs2.append("Shake it off")
+
+var songs4 = ["Shake it Off", "You Belong with Me", "Love Story"]
+var songs5 = ["Today was a Fairytale", "Welcome to New York", "Fifteen"]
+var both2 = songs4 + songs5
+both2 += ["Everything has changed."]
