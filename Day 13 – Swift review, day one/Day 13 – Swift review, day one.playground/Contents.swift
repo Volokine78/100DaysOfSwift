@@ -82,3 +82,14 @@ var songs4 = ["Shake it Off", "You Belong with Me", "Love Story"]
 var songs5 = ["Today was a Fairytale", "Welcome to New York", "Fifteen"]
 var both2 = songs4 + songs5
 both2 += ["Everything has changed."]
+
+var person = [
+                "first": "Taylor",
+                "middle": "Alison",
+                "last": "Swift",
+                "month": "December",
+                "website": "taylorswift.com"
+             ]
+
+person["middle"]
+person["month"]
