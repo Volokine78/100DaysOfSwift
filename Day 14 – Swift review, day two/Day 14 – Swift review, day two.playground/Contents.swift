@@ -179,3 +179,59 @@ taylorCopy.shoes = "flip flops"
 
 print(taylor)
 print(taylorCopy)
+
+class Person2 {
+    var clothes: String
+    var shoes: String
+    
+    init(clothes: String, shoes: String) {
+        self.clothes = clothes
+        self.shoes = shoes
+    }
+}
+
+class Singer {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func sing() {
+        print("La la la la")
+    }
+}
+
+var taylor2 = Singer(name: "Taylor", age: 25)
+taylor2.name
+taylor2.age
+taylor2.sing()
+
+class CountrySinger: Singer {
+    override func sing() {
+        print("Trucks, guitars and liquor")
+    }
+}
+
+var taylor3 = CountrySinger(name: "Taylor", age: 25)
+taylor3.sing()
+
+class HeavyMetalSinger: Singer {
+    var noiseLevel: Int
+    
+    init(name: String, age: Int, noiseLevel: Int) {
+        self.noiseLevel = noiseLevel
+        super.init(name: name, age: age)
+    }
+    
+    override func sing() {
+        print("Grrrr rargh rargh rarrrrrgh!")
+    }
+}
+
+var darkTaylor = HeavyMetalSinger(name: "Dark Taylor", age: 25, noiseLevel: 95)
+darkTaylor.sing()
+
+@objcMembers class Class {}
