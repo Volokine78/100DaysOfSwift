@@ -120,3 +120,41 @@ print(str.uppercased())
 
 let album2 = albumReleased(year: 2021) ?? "unknown"
 print("The album is \(album2)")
+
+enum WeatherType {
+    case sun
+    case cloud
+    case rain
+    case wind(speed: Int)
+    case snow
+}
+
+func getHaterStatus2(weather: WeatherType) -> String? {
+    switch weather {
+        case .sun:
+            return nil
+        case .cloud, .wind:
+            return "dislike"
+        case .rain:
+            return "hate"
+        case .snow:
+            return "more hate"
+    }
+}
+
+getHaterStatus2(weather: .cloud)
+
+func getHaterStatus3(weather: WeatherType) -> String? {
+    switch weather {
+        case .sun:
+            return nil
+        case .wind(let speed) where speed < 10:
+            return "meh"
+        case .cloud, .wind:
+            return "dislike"
+        case .rain, .snow:
+            return "hate"
+    }
+}
+
+getHaterStatus3(weather: .wind(speed: 5))
