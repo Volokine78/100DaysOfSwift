@@ -131,3 +131,9 @@ for album in allAlbums2 as? [LiveAlbum] ?? [LiveAlbum]() {
 let number = 5
 let text = String(number)
 print(text)
+
+let vw = UIView()
+
+UIView.animate(withDuration: 0.5) {
+    vw.alpha = 0
+}
