@@ -43,3 +43,13 @@ struct Person3 {
 
 var fan = Person3(age: 25)
 print(fan.ageInDogYears)
+
+struct TaylorFan {
+    static var favoriteSong = "Look What You Make Me Do"
+    
+    var name: String
+    var age: Int
+}
+
+let fan2 = TaylorFan(name: "James", age: 25)
+print(TaylorFan.favoriteSong)
