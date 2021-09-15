@@ -53,3 +53,7 @@ struct TaylorFan {
 
 let fan2 = TaylorFan(name: "James", age: 25)
 print(TaylorFan.favoriteSong)
+
+class TaylorFan2 {
+    private var name: String?
+}
