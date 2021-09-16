@@ -144,6 +144,12 @@ protocol Employee {
     func doWork()
 }
 
+extension Employee {
+    func doWork() {
+        print("I'm busy!")
+    }
+}
+
 struct Executive: Employee {
     var name = "Steve Jobs"
     var jobTitle = "CEO"
@@ -191,3 +197,32 @@ extension String {
         self = trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
+
+extension Int {
+    func clamp(low: Int, high: Int) -> Int {
+        if (self > high) {
+            return high
+        } else if (self < low) {
+            return low
+        }
+        return self
+    }
+}
+
+let i: Int = 8
+print(i.clamp(low: 0, high: 5))
+
+extension BinaryInteger {
+    func clamp(low: Self, high: Self) -> Self {
+        if (self > high) {
+            return high
+        } else if (self < low) {
+            return low
+        }
+        return self
+    }
+}
+
+let j: UInt64 = 8
+print(j.clamp(low: 0, high: 5))
+6
